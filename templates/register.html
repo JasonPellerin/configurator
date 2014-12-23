@@ -1,0 +1,59 @@
+<h2>Register for The Cyber Switching Product Configurator</h2>
+<form action="" method="post">
+{% csrf_token %}
+{% if form.errors %}<p>Please correct the following fields:</p>{% endif %}
+<div class="register_div">
+        {% if form.email.errors %}<p class="error">{{ form.email.errors }}</p>{% endif %}
+        <p><label for="email"{% if form.email.errors %} class="error"{% endif %}>Email:</label></p>
+        <p>{{ form.email }}</p>
+</div>
+<div class="register_div">
+        {% if form.password.errors %}<p class="error">{{ form.password.errors }}</p>{% endif %}
+        <p><label for="password"{% if form.password.errors %} class="error"{% endif %}>Password:</label></p>
+        <p>{{ form.password }}</p>
+</div>
+<div class="register_div">
+        {% if form.password1.errors %}<p class="error">{{ form.password1.errors }}</p>{% endif %}
+        <p><label for="password1"{% if form.password1.errors %} class="error"{% endif %}>Verify Password:</label></p>
+        <p>{{ form.password1 }}</p>
+</div>
+<div class="register_div">
+        {% if form.first_name.errors %}<p class="error">{{ form.first_name.errors }}</p>{% endif %}
+        <p><label for="first_name"{% if form.first_name.errors %} class="error"{% endif %}>First Name:</label></p>
+        <p>{{ form.first_name }}</p>
+</div>
+<div class="register_div">
+        {% if form.last_name.errors %}<p class="error">{{ form.Last_name.errors }}</p>{% endif %}
+        <p><label for="last_name"{% if form.last_name.errors %} class="error"{% endif %}>Last Name:</label></p>
+        <p>{{ form.last_name }}</p>
+</div>
+<div class="register_div">
+        {% if form.title.errors %}<p class="error">{{ form.title.errors }}</p>{% endif %}
+        <p><label for="title"{% if form.title.errors %} class="error"{% endif %}>Title:</label></p>
+        <p>{{ form.title }}</p>
+</div>
+<div class="register_div">
+        {% if form.phone.errors %}<p class="error">{{ form.phone.errors }}</p>{% endif %}
+        <p><label for="phone"{% if form.phone.errors %} class="error"{% endif %}>Phone:</label></p>
+        <p>{{ form.phone }}</p>
+</div>
+<div class="register_div">
+        {% if form.time_frame.errors %}<p class="error">{{ form.time_frame.errors }}</p>{% endif %}
+        <p><label for="time_frame"{% if form.time_frame.errors %} class="error"{% endif %}>Time Frame:</label></p>
+        <p>{{ form.time_frame }}</p>
+</div>
+<div class="register_div">
+        {% if form.company_name.errors %}<p class="error">{{ form.company_name.errors }}</p>{% endif %}
+        <p><label for="company_name"{% if form.company_name.errors %} class="error"{% endif %}>Company Name:</label></p>
+        <p>{{ form.company_name }}</p>
+</div>
+
+<div class="register_div">
+        {% if form.captcha.errors %}<p class="error">{{ form.captcha.errors }}</p>{% endif %}
+        <p><label for="captcha"{% if form.captcha.errors %} class="error"{% endif %}>CAPTCHA:</label></p>
+        <p>{{ form.captcha }}</p>
+</div>
+
+<p><input type="submit" alt="register" /></p>
+</form>
+

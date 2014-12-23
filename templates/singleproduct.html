@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="/media/css/config.css">
+{% endblock %}
+{% block content %}
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <div class="masthead clearfix">
+        <div class="inner">
+          <a href="http://cyberswitching.com"><img src="/media/images/cs.jpg" class="masthead-brand" hieght="75" width="300"/></a>
+
+          <ul class="nav masthead-nav">
+            <li>
+              <a href="/">Main</a>
+            </li>
+
+            <li>
+              <a href="/categorys/">Categorys</a>
+            </li>
+
+            <li>
+              <a href="http://www.cyberswitching.com/index.php/about/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+&nbsp<br /><br /><br /><br />
+       
+		<div class="container-fluid">     <div class="content-wrapper">
+
+   		<div class="item-container">
+	 			
+		<div class="container">	 				
+		<div class="col-md-12 col-sm-12"> 					
+		<div class="product col-md-6 service-image-left">                      						
+			<center> 							
+	<img id="item-display" src="{{ product.display_pic }}" alt="Product Picture" class="img-responsive"></img> 
+			</center> 					
+		</div> 					 					
+		<div class="container service1-items col-sm-2 col-md-2 pull-left"> 						
+			<center> 							
+			<a id="item-1" class="service1-item"> 								
+	<img src="{{ product.plug_pic }}" alt="Plug Picture"></img> 							
+	</a> 							
+		<a id="item-2" class="service1-item"> 								
+	<img src="{{ product.outlet_pic }}" alt="Outlet Picture"></img> 							
+	</a> 							
+	
+			</center> 					
+	</div> 				
+	</div> 					 				
+	<div class="col-md-7"> 					
+	<div class="product-title">{{ product.category }}</div> 					
+	<div class="product-desc">{{ product.part_number }}</div> 					
+	<div class="product-rating"><i class="fa fa-star gold"></i> 
+	<i class="fa fa-star gold"></i> 
+	<i class="fa fa-star gold"></i> 
+	<i class="fa fa-star gold"></i> 
+	<i class="fa fa-star-o"></i> 
+	</div> 					
+	<hr> 					
+	<div class="product-price">$ {{ product.base_price }}</div> 					
+	<div class="product-stock"></div> 					
+	<hr> 					 				
+	</div> 			
+	</div>  		
+	</div> 		
+	<div class="container-fluid">		 			
+	<div class="col-md-12 product-info"> 					
+	<ul id="myTab" class="nav nav-tabs nav_tabs"> 						 						
+	<li class="active"><a href="#service-one" data-toggle="tab">DESCRIPTION</a></li> 						
+	 						
+	 						 					
+	</ul> 				
+	<div id="myTabContent" class="tab-content"> 						
+	<div class="tab-pane fade in active" id="service-one"> 						  							
+	<section class="container product-info"> 	
+	<p>{{ product.description }}</p>	  
+	 						
+	</section> 										   						
+	</div> 					
+	<div class="tab-pane fade" id="service-two"> 						 						
+	<section class="container"> 								 						
+	</section> 						 					
+	</div> 					
+	<div class="tab-pane fade" id="service-three"> 												 					
+        </div> 				
+	</div> 				
+	<hr> 			
+   </div> 		
+  </div> 	
+ </div> 
+
+<br /><br /><br /><br /><br /><br />
+
+      <div class="mastfoot">
+        <div class="inner">
+          <!-- Validation -->
+
+          <p>©  2014 <a href="http://cyberswitching.com/">Cyber Switching</a></p>
+                    <p><small>Quadrunner &  Django</small><sup>1.7</sup> Inside</a></p>
+           </div>
+      </div>
+     </div>
+    </div>	    
+
+
+
+{% endblock %}

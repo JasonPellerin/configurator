@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="/media/css/config.css">
+{% endblock %}
+{% block content %}
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <div class="masthead clearfix">
+        <div class="inner">
+          <a href="http://cyberswitching.com"><img src="/media/images/cs.jpg" class="masthead-brand" hieght="75" width="300"/></a>
+
+          <ul class="nav masthead-nav">
+            <li>
+              <a href="/">Main</a>
+            </li>
+
+            <li class="active">
+              <a href="/categorys/">Categorys</a>
+            </li>
+
+            <li>
+              <a href="http://www.cyberswitching.com/index.php/about/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="inner cover">
+
+           <div class="inner" id="productslist">
+                
+                <h1>Product Categorys</h1>
+                {% for category in categorys %}
+                <p><a href="/categorys/{{ category.slug }}/">{{ category }}</a></p>
+                {% endfor %}
+        </div>
+      </div>
+</div>
+      <div class="mastfoot">
+        <div class="inner">
+          <!-- Validation -->
+
+          <p>©  2014 <a href="http://cyberswitching.com/">Cyber Switching</a></p>
+                    <p><small>uadrunner &  Django<sup>1.7</sup> inside</small> </a></p>
+           </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}
+
