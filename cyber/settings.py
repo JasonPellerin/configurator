@@ -63,9 +63,9 @@ WSGI_APPLICATION = 'cyber.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cyber_db',
-	'USER': 'root',
-	'PASSWORD': '!xy09zzz',
+        'NAME': 'XXXXXXXXXXXXx',
+	'USER': 'XXXXXXXXXXXXXXXXX',
+	'PASSWORD': 'XXXXXXXXXXXXXXXXXX',
     }
 }
 
